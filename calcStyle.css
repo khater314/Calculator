@@ -7,6 +7,13 @@ body {
     gap: 1em;
     min-height: 100vh; 
 }
+.container {
+    margin-block: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 .results {
     background-color: #2e2e2e;
     color: white;
@@ -121,4 +128,34 @@ li {
 .side-operators .equal-sign,
 .side-operators .operator {
     width: 80px;
+}
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+    }
+    .results {
+        order: 2;
+        width: 100%;
+    }
+    .calculator {
+        order: 1;
+        width: 100%;
+    }
+    .calculator-buttons input {
+        height: 40px;
+        width: 40px;
+        font-size: 1em;
+    }
+    .side-operators .equal-sign,
+    .side-operators .operator {
+    width: 40px;
+    }
+    .calculator-buttons {
+    display: grid;
+    grid-template-columns: 1fr 40px; 
+    gap: 5px;
+    }
+    .calculator {
+        max-width: 300px;
+    }
 }
