@@ -67,7 +67,7 @@ let Calculator =
         this.txtResult.value = this.Result
         this.IsCalculated = true
         this.CurrentValues.push(this.Result)
-        
+
         this.ScreenValues.innerText = ''
         for (let i = 0; i < this.CurrentValues.length; i++)
         {
@@ -82,5 +82,15 @@ let Calculator =
         this.Operator = 0
         this.Result = 0
         this.txtResult.value = ""
-    }
+    },
+    ResetAllValues: function ()
+    {
+        this.FirstValue = null
+        this.SecoundValue = null
+        this.Operator = 0
+        this.Result = 0
+        this.txtResult.value = ""
+        this.CurrentValues = []
+        this.ScreenValues.innerText = ''
+        }
 }
