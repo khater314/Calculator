@@ -4,7 +4,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
     min-height: 100vh; 
+}
+.results {
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 3em;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    align-self: self-start;
+}
+h1 {
+    font-size: 0.5em;
+}
+.result-values {
+    font-size: 0.3em;
+}
+ul {
+    text-align: left;
+    padding-inline-start: 20px;
+}
+li {
+    margin-bottom: 0.3em;
 }
 
 .calculator {
